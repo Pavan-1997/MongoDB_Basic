@@ -1,0 +1,58 @@
+[{
+  "_id": {
+    "$oid": "647bf6f9ed841d93b4b95152"
+  },
+  "name": "Patrick",
+  "age": 38,
+  "gpa": 1.5,
+  "fullTime": false
+},
+{
+  "_id": {
+    "$oid": "647bf6f9ed841d93b4b95153"
+  },
+  "name": "Sandy",
+  "age": 27,
+  "gpa": 4,
+  "fullTime": true
+},
+{
+  "_id": {
+    "$oid": "647bf6f9ed841d93b4b95154"
+  },
+  "name": "Gary",
+  "age": 18,
+  "gpa": 2.5,
+  "fullTime": false
+},
+{
+  "_id": {
+    "$oid": "647bfa82ed841d93b4b95155"
+  },
+  "name": "Pavan",
+  "age": 32,
+  "gpa": 2.8,
+  "fullTime": false,
+  "registerDate": {
+    "$date": "2023-06-04T02:44:18.590Z"
+  },
+  "gradDate": null,
+  "courses": [
+    "Biology",
+    "Chemistry",
+    "Calculas"
+  ],
+  "address": {
+    "street": "133 South Park St",
+    "city": "Hlifax",
+    "zip": 12345
+  }
+},
+{
+  "_id": {
+    "$oid": "647c8e2ced841d93b4b95156"
+  },
+  "name": "Spongebob",
+  "age": 30,
+  "gpa": 3.2
+}]
