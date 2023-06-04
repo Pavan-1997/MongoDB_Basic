@@ -1,5 +1,5 @@
 # Learned Basics of MongoDB
-MongoDB is a popular open-source document-oriented database management system. It is designed to store and manage large volumes of data in a flexible and scalable manner. MongoDB stores data in a format called BSON (Binary JSON), which allows for easy integration with programming languages and efficient data retrieval. It features a flexible data model, powerful query language, and supports high availability and horizontal scalability. MongoDB is commonly used in web applications, data analytics, and other scenarios where flexible data storage and retrieval are crucial.
+MongoDB is a NoSQL DBMS popular open-source document-oriented database management system. It is designed to store and manage large volumes of data in a flexible and scalable manner. MongoDB stores data in a format called BSON (Binary JSON), which allows for easy integration with programming languages and efficient data retrieval. It features a flexible data model, powerful query language, and supports high availability and horizontal scalability. MongoDB is commonly used in web applications, data analytics, and other scenarios where flexible data storage and retrieval are crucial.
 
 The are commands are documented in CMD.txt text file and applied on a students DB which is present in form of csv file in repo
 
