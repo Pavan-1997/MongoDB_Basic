@@ -104,20 +104,25 @@ Default DB's present are:
 
       Delete multiple documents if the registerDate feild doesn't exists
 
-24. db.students.find({name:{$ne:"Spongebob"}})
-# This Not Equal to operator in MongoDB which returns values other than Spongebob
+24. `db.students.find({name:{$ne:"Spongebob"}})`
 
-24. db.students.find({age:{$lt:20}})
-# This Less than to operator in MongoDB which returns values of age less than 20
+      This Not Equal to operator in MongoDB which returns values other than Spongebob
 
-25. db.students.find({age:{$lte:27}})
-# This Less than or Equal to operator in MongoDB which returns values of age less than or equal to 27
+24. `db.students.find({age:{$lt:20}})`
 
-26.db.students.find({age:{$gt:20}})
-# This Greater than to operator in MongoDB which returns values of age greater than 20
+      This Less than to operator in MongoDB which returns values of age less than 20
 
-27. db.students.find({age:{$gte:27}})
-# This Greater than or Equal to operator in MongoDB which returns values of age greater than or equal to 27
+25. `db.students.find({age:{$lte:27}})`
+
+      This Less than or Equal to operator in MongoDB which returns values of age less than or equal to 27
+
+26. `db.students.find({age:{$gt:20}})`
+
+      This Greater than to operator in MongoDB which returns values of age greater than 20
+
+27. `db.students.find({age:{$gte:27}})`
+
+      This Greater than or Equal to operator in MongoDB which returns values of age greater than or equal to 27
 
 28. db.students.find({age:{$gte:27, $lte:4}})
 # Multiple Comparision Operators
