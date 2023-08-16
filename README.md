@@ -124,33 +124,41 @@ Default DB's present are:
 
       This Greater than or Equal to operator in MongoDB which returns values of age greater than or equal to 27
 
-28. db.students.find({age:{$gte:27, $lte:4}})
-# Multiple Comparision Operators
+28. `db.students.find({age:{$gte:27, $lte:4}})`
 
-29. db.students.find({name:{$in:["Spongebob","Pavan"]}})
-# This is a IN operator in MongoDB which returns values where on of this values in array is found with name feild
+      Multiple Comparision Operators
 
-30. db.students.find({name:{$nin:["Spongebob","Pavan"]}})
-# This is a NOT-IN operator in MongoDB which doesn't returns values where on of this values in array is found with name feild
+29. `db.students.find({name:{$in:["Spongebob","Pavan"]}})`
 
-31. db.students.find({$and: [{fullTime:true}, {age:{$lte:38}}]})
-# This is a conditional AND Operator with multiple conditions in it
+      This is a IN operator in MongoDB which returns values where on of this values in array is found with name feild
 
-32. db.students.find({$or: [{fullTime:true}, {age:{$lte:38}}]})
-# This is a conditional OR Operator with multiple conditions in it
+30. `db.students.find({name:{$nin:["Spongebob","Pavan"]}})`
 
-33. db.students.find({$nor: [{fullTime:true}, {age:{$lte:38}}]})
-# This is a conditional NOR Operator with multiple conditions in it , both false
+      This is a NOT-IN operator in MongoDB which doesn't returns values where on of this values in array is found with name feild
 
-34. db.students.find({age:{$not:{$gte:30}}})
-# This is a conditional NOT Operator which returns ages less than 30 even if any age has NULL feild
+31. `db.students.find({$and: [{fullTime:true}, {age:{$lte:38}}]})`
 
-35. Indexes: Allows for quick look of feild which takes memory slows Insert, Update, and Remove operations
+      This is a conditional AND Operator with multiple conditions in it
 
-	db.students.find({name:"Garry"}).explain("executionStats") 
-# We have examined all documents present in collection to find Garry in a Linear Search
+32. `db.students.find({$or: [{fullTime:true}, {age:{$lte:38}}]})`
+
+      This is a conditional OR Operator with multiple conditions in it
+
+33. `db.students.find({$nor: [{fullTime:true}, {age:{$lte:38}}]})`
+
+      This is a conditional NOR Operator with multiple conditions in it , both false
+
+34. `db.students.find({age:{$not:{$gte:30}}})`
+
+      This is a conditional NOT Operator which returns ages less than 30 even if any age has NULL feild
+
+35. `db.students.find({name:"Garry"}).explain("executionStats")`
+
+      Indexes: Allows for quick look of feild which takes memory slows Insert, Update, and Remove operations
+
+      We have examined all documents present in collection to find Garry in a Linear Search
 	
-# Say suppose we have 1000's of documents than it going to take lot of time so we use index here
+      Say suppose we have 1000's of documents than it going to take lot of time so we use index here
 	
 36. db.students.createIndex({name: 1})
 # Create a index and arrage data using ascending 1 or descending -1
