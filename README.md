@@ -45,52 +45,66 @@ Default DB's present are:
 
      Similar cmds listed above can be done in GUI using MongoDB Compass
 
-9. db.students.insertOne({name:"Pavan", age: 32, gpa: 2.8, fullTime: false,
+9. `db.students.insertOne({name:"Pavan", age: 32, gpa: 2.8, fullTime: false,
 							registerDate: new Date(), gradDate: null,
 							courses: ["Biology", "Chemistry", "Calculas"],
-							address: {street:"133 South Park St", city: "Hlifax", zip: 12345}})
-# Datatypes in MongoDB
+							address: {street:"133 South Park St", city: "Hlifax", zip: 12345}})`
+ 
+     Datatypes in MongoDB
 					
-10. db.students.find().sort({name:1})
-# Sort names - 1 by alphabetical order or ascending and names - (-1) for reverse alphabetical order or descending
+10. `db.students.find().sort({name:1})`
 
-11. db.students.find({name: "Spongebob"})
-# To search for a specific document also can be used to search multiple documents
+      Sort names - 1 by alphabetical order or ascending and names - (-1) for reverse alphabetical order or descending
 
-12. db.students.find({},{name:true})
-# This is projection paramater in MongoDB which returns only the name in the documents along with Id's
+11. `db.students.find({name: "Spongebob"})`
 
-13. db.students.find({},{_id:false, name:true})
-# This is projection paramater in MongoDB which returns only the name in the documents with no Id's
+      To search for a specific document also can be used to search multiple documents
 
-14. db.students.find({},{_id:false, name:true, gpa:true})
-# This is projection paramater in MongoDB which returns only the name in the documents with no Id's along with gpa's
+12. `db.students.find({},{name:true})`
 
-15. db.students.updateOne({name:"Sandy"}, {$set:{fullTime:true}})
-# Update document with name followed by the fulltime feild
+      This is projection paramater in MongoDB which returns only the name in the documents along with Id's
 
-16. db.students.updateOne({_id:ObjectId("647bf6f9ed841d93b4b95153")}, {$set:{fullTime:false}})
-# Update document with name followed by the fulltime feild using Id's which is a best practise
+13. `db.students.find({},{_id:false, name:true})`
 
-17. db.students.updateOne({_id:ObjectId("647bf6f9ed841d93b4b95153")}, {$unset:{fullTime:""}})
-# Update document with name followed by the removing feild using Id's which is a best practise
+      This is projection paramater in MongoDB which returns only the name in the documents with no Id's
 
-18. db.students.updateMany({}, {$set:{fullTime:true}})
-# Update multiple documents with name followed by the fulltime feild
+14. `db.students.find({},{_id:false, name:true, gpa:true})`
 
-19. db.students.updateMany({fullTime:{$exists:false}}, {$set:{fullTime:true}})
-# Update multiple documents who dont have a full time feild then update with fulltime 
+      This is projection paramater in MongoDB which returns only the name in the documents with no Id's along with gpa's
 
-20. db.students.deleteOne({name:"Gary"})
-# Delete a document with name
+15. `db.students.updateOne({name:"Sandy"}, {$set:{fullTime:true}})`
 
-21. db.students.deleteMany({fullTime:false})
-# Delete multiple documents with fulltime
+      Update document with name followed by the fulltime feild
 
-22. db.students.deleteMany({registerDate:{$exists:false}})
-# Delete multiple documents if the registerDate feild doesn't exists
+16. `db.students.updateOne({_id:ObjectId("647bf6f9ed841d93b4b95153")}, {$set:{fullTime:false}})`
 
-23. db.students.find({name:{$ne:"Spongebob"}})
+      Update document with name followed by the fulltime feild using Id's which is a best practise
+
+17. `db.students.updateOne({_id:ObjectId("647bf6f9ed841d93b4b95153")}, {$unset:{fullTime:""}})`
+
+      Update document with name followed by the removing feild using Id's which is a best practise
+
+18. `db.students.updateMany({}, {$set:{fullTime:true}})`
+
+      Update multiple documents with name followed by the fulltime feild
+
+19. `db.students.updateMany({fullTime:{$exists:false}}, {$set:{fullTime:true}})`
+
+      Update multiple documents who dont have a full time feild then update with fulltime 
+
+21. `db.students.deleteOne({name:"Gary"})`
+
+      Delete a document with name
+
+21. `db.students.deleteMany({fullTime:false})`
+
+      Delete multiple documents with fulltime
+
+22. `db.students.deleteMany({registerDate:{$exists:false}})`
+
+      Delete multiple documents if the registerDate feild doesn't exists
+
+24. db.students.find({name:{$ne:"Spongebob"}})
 # This Not Equal to operator in MongoDB which returns values other than Spongebob
 
 24. db.students.find({age:{$lt:20}})
