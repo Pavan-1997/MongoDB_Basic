@@ -160,23 +160,29 @@ Default DB's present are:
 	
       Say suppose we have 1000's of documents than it going to take lot of time so we use index here
 	
-36. db.students.createIndex({name: 1})
-# Create a index and arrage data using ascending 1 or descending -1
+36. `db.students.createIndex({name: 1})`
+
+      Create a index and arrage data using ascending 1 or descending -1
 	
-37.	db.students.find({name:"Garry"}).explain("executionStats") 
-# Now check the value "docsExamined" which reduces from earlier case
+37. `db.students.find({name:"Garry"}).explain("executionStats")`
+
+      Now check the value "docsExamined" which reduces from earlier case
 	
-38.	db.students.getIndexes()
-# To view indexes
+38. `db.students.getIndexes()` 
+
+      To view indexes
 	
-39.	db.students.dropIndex("name_1")
-# To drop Index 
+39. `db.students.dropIndex("name_1")`
+
+      To drop Index 
 	
 40. Collection is a group of Documents
-	Database is group of Collections
+
+     Database is group of Collections
 	
-	show collections
-# Views the list of collections
+     `show collections`
+
+     Views the list of collections
 	
 41. db.createCollection("teachers")
 # To create collection
