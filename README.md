@@ -11,8 +11,9 @@ Default DB's present are:
 ---
 MONGO DB:
 
-1. show dbs
-# To show db
+1. `show dbs`
+
+     To show db
 
 2. use admin
 
