@@ -15,13 +15,15 @@ MONGO DB:
 
      To show db
 
-2. use admin
+2. `use admin`
 
-3. use school
-# To create a school db
+3. `use school`
+	
+     To create a school db
 
-4. db.createCollection("students")
-# Run the above cmd in school db and now use show dbs to view school db which was created earlier 
+4. `db.createCollection("students")`
+
+     Run the above cmd in school db and now use show dbs to view school db which was created earlier 
 
 5. db.dropDatabase()
 # Deletes the db and no longer appears in show dbs
