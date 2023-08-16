@@ -16,6 +16,8 @@ MONGO DB:
 
     To show db
 
+2. `use admin`
+
 3. use admin
 
 4. use school
