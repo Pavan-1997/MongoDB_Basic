@@ -9,7 +9,7 @@ Default DB's present are:
 
 
 ---
-MONGO DB:
+# MONGO DB:
 
 1. `show dbs`
 
@@ -25,21 +25,25 @@ MONGO DB:
 
      Run the above cmd in school db and now use show dbs to view school db which was created earlier 
 
-5. db.dropDatabase()
-# Deletes the db and no longer appears in show dbs
+5. `db.dropDatabase()`
 
-Similar cmds listed above can be done in GUI using MongoDB Compass
+     Deletes the db and no longer appears in show dbs
 
-6. db.students.insertOne({name:"Spongebob", age:30, gpa:3.2})
-# Creates a document in the students collection
+     Similar cmds listed above can be done in GUI using MongoDB Compass
 
-7. db.students.find()
-# To find the documents in the collection 
+6. `db.students.insertOne({name:"Spongebob", age:30, gpa:3.2})`
 
-8. db.students.insertMany([{name:"Patrick", age:38, gpa:1.5},{name: "Sandy", age:27, gpa:4.0},{name:"Gary", age:18, gpa:2.5}])
-# To insert multiple documents in the collection
+     Creates a document in the students collection
 
-Similar cmds listed above can be done in GUI using MongoDB Compass
+7. `db.students.find()`
+
+     To find the documents in the collection 
+
+8. `db.students.insertMany([{name:"Patrick", age:38, gpa:1.5},{name: "Sandy", age:27, gpa:4.0},{name:"Gary", age:18, gpa:2.5}])`
+
+     To insert multiple documents in the collection
+
+     Similar cmds listed above can be done in GUI using MongoDB Compass
 
 9. db.students.insertOne({name:"Pavan", age: 32, gpa: 2.8, fullTime: false,
 							registerDate: new Date(), gradDate: null,
