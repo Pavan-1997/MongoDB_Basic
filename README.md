@@ -12,12 +12,13 @@ Default DB's present are:
 
 MONGO DB:
 
-1. show dbs
-# To show db
+1. `show dbs`
 
-2. use admin
+    To show db
 
-3. use school
+3. use admin
+
+4. use school
 # To create a school db
 
 4. db.createCollection("students")
