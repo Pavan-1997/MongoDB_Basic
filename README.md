@@ -184,14 +184,18 @@ Default DB's present are:
 
      Views the list of collections
 	
-41. db.createCollection("teachers")
-# To create collection
+41. `db.createCollection("teachers")`
+
+      To create collection
 	
-42. db.createCollection("teachers", {capped:true, size:1000000, max:100})
-# To create collection with max size 10MB and max documents
+42. `db.createCollection("teachers", {capped:true, size:1000000, max:100})`
 
-42. db.createCollection("teachers", {capped:true, size:1000000, max:100}, {autoIndexId: false)
-# To create collection with max size 10MB and max collections with no indexes
+      To create collection with max size 10MB and max documents
 
-43. db.<collection-name>.drop()
-# Drop collection-name
+42. `db.createCollection("teachers", {capped:true, size:1000000, max:100}, {autoIndexId: false)`
+
+      To create collection with max size 10MB and max collections with no indexes
+
+43. `db.<collection-name>.drop()`
+
+      Drop collection-name
